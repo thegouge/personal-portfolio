@@ -1,9 +1,7 @@
  /* HERO */
 
- /* .main-page {} */
-
  .hero {
-     /* min-height: 800px; */
+     min-height: 800px;
      text-align: center;
      background: #555;
      background-image: url('../images/hero.jpg');
@@ -11,6 +9,7 @@
      filter: contrast(150%);
      text-shadow: 0px 0px 10px black;
      background-size: cover;
+     z-index: 0;
  }
 
  #welcome-section {
@@ -141,25 +140,6 @@
 
  .contact {
      font-size: 15px;
- }
-
- /* FOOTER OVERWRITE */
-
- footer {
-     display: block;
-     background: #222;
-     grid-template-areas: none;
-     grid-template-columns: none;
-     text-align: center;
-     padding: 10px;
- }
-
- footer img {
-     display: block;
-     margin: auto;
-     margin-bottom: 5px;
-     width: 70px;
-     border-radius: 5px;
  }
 
  /* MOBILE RESPONSIVENESS */

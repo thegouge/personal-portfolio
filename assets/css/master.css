@@ -17,9 +17,11 @@ body {
     background: #222;
     color: white;
     padding: 20px 20px;
-    display: fixed;
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 /* logo nest inside header */
@@ -98,13 +100,13 @@ body {
 /* FOOTER */
 
 footer {
-    display: grid;
-    grid-template-areas: ". a b";
-    grid-template-columns: 34% 34% 31%;
+    display: flex;
+    justify-content: space-around;
     background: #222;
     color: #777;
     padding: 10px;
     text-align: center;
+    margin-bottom: 0;
 }
 
 footer img {
@@ -115,14 +117,15 @@ footer img {
 }
 
 .self {
-    grid-area: a;
+    order: 2;
     width: 100%;
     text-align: center;
 }
 
 .attribution {
-    margin-left: 50px;
-    grid-area: b;
+    order: 3;
+    /* margin-left: 50px; */
+    width: 20%;
     text-align: left;
     overflow: hidden;
 }
@@ -148,8 +151,12 @@ footer ul li {
     transition: 0.5s;
 }
 
+#base-covering {
+    order: 1;
+    width: 20%;
+}
+
 main {
-    padding-bottom: 50px;
     padding-top: 50px;
 }
 
