@@ -61,6 +61,7 @@
      margin-left: 10px;
      line-height: 1;
      border-radius: 5px;
+     transition: 0.5s ease all;
  }
 
  #box1 {
@@ -77,7 +78,6 @@
 
  .service-box:hover {
      background: #bed6ca;
-     transition: 0.5s ease all;
  }
 
  .service-box .image {
@@ -142,6 +142,17 @@
      font-size: 15px;
  }
 
+ .contact-box {
+     width: 300px;
+     padding: 20px;
+     border-radius: 10px;
+     transition: 0.5s;
+ }
+
+ .contact-box:hover {
+     background: #bed6ca;
+ }
+
  /* MOBILE RESPONSIVENESS */
 
  @media all and (max-width: 1035px) {
@@ -168,5 +179,6 @@
      }
      #contact-list {
          flex-direction: column;
+         margin: auto;
      }
  }
