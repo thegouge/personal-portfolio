@@ -102,7 +102,7 @@
      margin-top: 0;
      margin-bottom: 15px;
      font-size: 20px;
-     color: #999;
+     color: rgb(58, 58, 58);
      text-transform: uppercase;
      font-weight: 300px;
      letter-spacing: 2px;
@@ -115,7 +115,7 @@
 
  .about {
      padding-top: 50px;
-     background: #ECF0F1;
+     background: rgb(213, 221, 223);
      width: 100%;
  }
 
